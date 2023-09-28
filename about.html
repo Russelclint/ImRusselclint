@@ -7,31 +7,21 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <style>
-        /* Reset margin and padding for the body element */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        
-      
-    </style>
     <script>
-        // JavaScript code to highlight the active navigation link
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get the ID of the current page's body element
-            const currentPageId = document.body.id;
-
-            // Highlight the corresponding navigation link
-            if (currentPageId) {
-                const navigationLink = document.querySelector(`.sidebar nav ul li a[href="${currentPageId}.html"]`);
-                if (navigationLink) {
-                    navigationLink.classList.add('active');
-                }
+        // JavaScript code to toggle the visibility of the information
+        function toggleDetails() {
+            const details = document.getElementById("details");
+            const toggleButton = document.getElementById("toggleButton");
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                toggleButton.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Details';
+            } else {
+                details.style.display = "none";
+                toggleButton.innerHTML = '<i class="fas fa-chevron-down"></i> Show Details';
             }
-        });
+        }
     </script>
+    
 </head>
 <body id="about">
     <aside class="sidebar">
@@ -47,14 +37,14 @@
         <!-- End of Social Media Icons -->
         <nav>
             <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Index</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
                 <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
             </ul>
         </nav>
         <img src="my-logo.png" alt="My Logo" class="sidebar-logo">
     </aside>
-    <main>
+    <main class="content-container">
         <header>
             <h1 class="about-me-heading">About Me</h1>
             <p class="student-info">Information Systems Student</p>
@@ -68,7 +58,7 @@
                 information systems.
             </p>
         </div>
-        <div class="details">
+        <div class="details" id="details" style="display: none;">
             <h2 class="summary-title">Details</h2>
             <div class="detail-item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -101,9 +91,12 @@
             <div class="detail-item">
                 <i class="fas fa-hobby"></i>
                 <span>Hobbies: Music, Movies/Series</span>
-       
             </div>
         </div>
+        <button id="toggleButton" onclick="toggleDetails()" class="toggle-button">
+            <i class="fas fa-chevron-down"></i> <span>Show Details</span>
+        </button>
+        
     </main>
 </body>
 </html>
