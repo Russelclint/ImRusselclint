@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+        // JavaScript code to highlight the active navigation link
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the ID of the current page's body element
+            const currentPageId = document.body.id;
+
+            // Highlight the corresponding navigation link
+            if (currentPageId) {
+                const navigationLink = document.querySelector(`.sidebar nav ul li a[href="${currentPageId}.html"]`);
+                if (navigationLink) {
+                    navigationLink.classList.add('active');
+                }
+            }
+        });
+
+       
+</script>
+    
+</head>
+<body id="resume">
+    <aside class="sidebar">
+        <img src="profile.jpg" alt="Your Name" class="profile-image">
+        <p class="profile-name">Russel Acosta</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lngwoooy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Laangshxx" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/adrion.russel/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/russel-acosta-40b8b121a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Index</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+            </ul>
+        </nav>
+        <img src="my-logo.png" alt="My Logo" class="sidebar-logo">
+    </aside>
+    <main>
+        <div class="skills">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <ul class="skill-list">
+                <li>
+                    <span class="skill-name">English Communication</span>
+                    <div class="skill-bar" data-tooltip="92%">
+                        <div class="skill-rating" style="width: 92%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Project Management</span>
+                    <div class="skill-bar" data-tooltip="90%">
+                        <div class="skill-rating" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Interpersonal Comm.</span>
+                    <div class="skill-bar" data-tooltip="87%">
+                        <div class="skill-rating" style="width: 87%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Frontend Development</span>
+                    <div class="skill-bar" data-tooltip="83%">
+                        <div class="skill-rating" style="width: 83%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Graphic Designing</span>
+                    <div class="skill-bar" data-tooltip="90%">
+                        <div class="skill-rating" style="width: 90%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Time Management</span>
+                    <div class="skill-bar" data-tooltip="97%">
+                        <div class="skill-rating" style="width: 97%;"></div>
+                    </div>
+                </li>
+                <li>
+                    <span class="skill-name">Backend Development</span>
+                    <div class="skill-bar" data-tooltip="88%">
+                        <div class="skill-rating" style="width: 88%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+
+<div class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>9200, Tibanga, Iligan City Philippines</p>
+    <p>Email: russeladrion@gmail.com</p>
+    <p>Phone: +639070802523</p>
+    <p><a href="https://www.linkedin.com/in/russel-acosta-40b8b121a/">LinkedIn</a></p>
+</div>
+
+<div class="education">
+    <h2 class="section-title">Education</h2>
+    <p>Mindanao State University - Iligan Institute of Technology</p>
+    <p>Bachelor of Science in Information Systems</p>
+    <p>2021-2025</p>
+    <p>CGPA: 1.400</p>
+</div>
+
+<div class="work-experience">
+    <h2 class="section-title">Work Experience</h2>
+    <p>Chairman of KKDAT Bayabas Chapter, 2021-PRESENT</p>
+    <p>KKDAT is a youth-led movement against drug abuse and terrorism in the Philippines, organized by the Philippine National Police (PNP)</p>
+    <p>Municipality of Bayabas, Surigao del Sur, MSWDO Community Facilitator PART-TIME</p>
+    <p>Facilitate in the implementation of Various Programs such as RRP_CCAM_DRR. Conduct Geotagging to all project site.</p>
+</div>
+
+<div class="projects">
+    <h2 class="section-title">Projects</h2>
+    <p>Computer Programming 1</p>
+    <p>Game Development using Pygame/Python</p>
+    <p>Scientific Calculator Development using Python.</p>
+    <!-- Add more project entries here -->
+    <p>Requirements Engineering</p>
+    <p>Creating a Hi-fi prototype and complete SRS for Noona's Grills Ordering and Inventory Management system using Figma software.</p>
+    <p>RIT Infrastructure and Network Technology</p>
+    <p>Reviewing and assessing the IT infrastructure of COOP TOURS RODECO TSC transportation services.</p>
+    <p>CCC151 Information Management</p>
+    <p>Developing a web-based equipment borrowing system for MSU-IIT.</p>
+    <p>Associate Project Manager</p>
+    <p>In the development of MSU-Iligan Institute Of Technology Web-based E-prescription System.</p>
+</div>
+
+    </main>
+</body>
+</html>

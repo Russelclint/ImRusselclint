@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+   
+    <script>
+        // JavaScript code to highlight the active navigation link
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the ID of the current page's body element
+            const currentPageId = document.body.id;
+
+            // Highlight the corresponding navigation link
+            if (currentPageId) {
+                const navigationLink = document.querySelector(`.sidebar nav ul li a[href="${currentPageId}.html"]`);
+                if (navigationLink) {
+                    navigationLink.classList.add('active');
+                }
+            }
+        });
+    </script>
+    <script>
+        // Function to cycle through professions
+        function cycleProfessions() {
+            const professions = [
+                { name: "Backend Developer", iconClass: "fas fa-code" },
+                { name: "Frontend Developer", iconClass: "fas fa-code" },
+                { name: "Designer", iconClass: "fas fa-paint-brush" },
+                { name: "Information System Student", iconClass: "fas fa-graduation-cap" }
+               
+            ];
+            const changingProfession = document.getElementById("changing-profession");
+            let currentIndex = 0;
+
+            setInterval(function () {
+                const profession = professions[currentIndex];
+                changingProfession.innerHTML = `<i class="${profession.iconClass}"></i> ${profession.name}`;
+                currentIndex = (currentIndex + 1) % professions.length;
+            }, 2000); // Change profession every 2 seconds (2000 milliseconds)
+        }
+
+        // Run the cycleProfessions function when the page loads
+        window.addEventListener("load", cycleProfessions);
+    </script>
+</head>
+<body id="index">
+    <aside class="sidebar">
+        <img src="profile.jpg" alt="Russel Acosta" class="profile-image">
+        <p class="profile-name">Russel Acosta</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lngwoooy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Laangshxx" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/adrion.russel/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/russel-acosta-40b8b121a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- End of Social Media Icons -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Index</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+            </ul>
+        </nav>
+        <img src="my-logo.png" alt="My Logo" class="sidebar-logo">
+    </aside>
+    <main>
+        <div class="header">
+            <h1>Russel Acosta</h1>
+            <p><span id="profession">I am</span> <span id="changing-profession"></span></p>
+        </div>
+    </main>
+</body>
+</html>

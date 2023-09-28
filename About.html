@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Reset margin and padding for the body element */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+      
+    </style>
+    <script>
+        // JavaScript code to highlight the active navigation link
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the ID of the current page's body element
+            const currentPageId = document.body.id;
+
+            // Highlight the corresponding navigation link
+            if (currentPageId) {
+                const navigationLink = document.querySelector(`.sidebar nav ul li a[href="${currentPageId}.html"]`);
+                if (navigationLink) {
+                    navigationLink.classList.add('active');
+                }
+            }
+        });
+    </script>
+</head>
+<body id="about">
+    <aside class="sidebar">
+        <img src="profile.jpg" alt="Russel Acosta" class="profile-image">
+        <p class="profile-name">Russel Acosta</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/lngwoooy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Laangshxx" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/adrion.russel/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/russel-acosta-40b8b121a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- End of Social Media Icons -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Index</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+            </ul>
+        </nav>
+        <img src="my-logo.png" alt="My Logo" class="sidebar-logo">
+    </aside>
+    <main>
+        <header>
+            <h1 class="about-me-heading">About Me</h1>
+            <p class="student-info">Information Systems Student</p>
+        </header>
+        <div class="professional-summary">
+            <h2 class="summary-title">Professional Summary</h2>
+            <p>
+                I am a dedicated Information System Student with a passion for technology and problem-solving.
+                With a strong foundation in software development, data management, and system analysis, I am
+                committed to leveraging my skills to create innovative solutions and contribute to the field of
+                information systems.
+            </p>
+        </div>
+        <div class="details">
+            <h2 class="summary-title">Details</h2>
+            <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>From: Tago, Surigao del Sur, Philippines</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education: 3rd year Bachelor of Science in Information Systems at Mindanao State University - Iligan Institute of Technology</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-venus-mars"></i>
+                <span>Gender: Male</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-birthday-cake"></i>
+                <span>Birthdate: January 31, 1999</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Age: 24 years old</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-award"></i>
+                <span>CGPA: 1.400</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-medal"></i>
+                <span>Academic Award: Chancellor's Lister</span>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-hobby"></i>
+                <span>Hobbies: Music, Movies/Series</span>
+       
+            </div>
+        </div>
+    </main>
+</body>
+</html>
