@@ -1,6 +1,8 @@
+/* These are the common styles */
+
 /* Sidebar Styles */
 .sidebar {
-    background-color: #0d0c0c;
+    background-color: #231d1d;
     color: #fff;
     width: 250px;
     height: 100%;
@@ -10,7 +12,15 @@
     overflow-x: hidden;
     padding-top: 20px;
 }
-
+/* Add styles for the sidebar logo */
+.sidebar-logo {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100px; 
+    height: auto; 
+}
 /* Updated Profile Image Styles */
 .profile-image {
     display: block;
@@ -27,13 +37,12 @@
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 110px; /* Adjusted margin */
-    margin-right: 0; /* Removed right margin */
+    margin-top: 110px; 
 }
 
 .sidebar nav ul li {
     text-align: center;
-    margin-bottom: 10px; /* Add space between navigation items */
+    margin-bottom: 10px; 
 }
 
 .sidebar nav ul li a {
@@ -57,10 +66,124 @@
 
 /* Highlight the active link */
 .sidebar nav ul li a.active {
-    background-color: #03324b; /* Background color for the active link */
-    color: #fff; /* Text color for the active link */
+    background-color: #03324b; 
+    color: #fff; 
 }
-/* Style for your name */
+
+/* Header Styles */
+.header {
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: #dad6e2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+}
+
+.header p {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0074e4; 
+}
+
+
+/* About Page Styles */
+/* Main Content Styles for About Page */
+body#about main {
+    margin-left: 250px; 
+    padding: 20px;
+    margin-top: 0;
+  
+    
+}
+.about-me-heading {
+    font-size: 36px;
+    color: #0074e4; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px; 
+}
+.student-info {
+    font-size: 24px;
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+/* Professional Summary Styles */
+.professional-summary {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+
+/* Details Section Styles */
+.details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; 
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-item i {
+    margin-right: 10px;
+    color: #0074e4; 
+}
+
+.detail-item span {
+    font-size: 18px;
+}
+
+/* Home Page Styles */
+/* Background Styles for Home Page */
+body#index {
+    background-image: url('home-background.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #fff;
+    padding: 20px;
+}
+
+/* Additional Home Page Styles */
+.header-index p {
+    font-size: 30px;
+    color: #fffefe;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Name Styles */
 .profile-name {
     text-align: center;
     font-size: 25px;
@@ -69,95 +192,7 @@
     margin-top: 20px;
     font-family: 'Pacifico';
 }
-
-/* Add styles to make the text standout and align to the right */
 .header {
-    text-align: right;
-    margin-top: 150px;
-    margin-right: 200px;
-    
-}
-body {
-    background-color: #ffffff; /* Replace with your desired background color */
-}
-
-/* Set background image for the Home page */
-/* Set background image for the Home page */
-body#index {
-    background-image: url('home-background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
-    background-size: cover; /* Scale the image to cover the entire background */
-    background-position: center center; /* Center the background image horizontally and vertically */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-attachment: fixed; /* Keep the background fixed when scrolling */
-
-
-    color: #fff; 
-    padding: 20px; 
-}
-
-.social-icons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #0074e4; /* Change color on hover */
-}
-
-/* Styles for the home page */
-body#index {
-    /* Add your home page-specific styles here */
-
-
-/* Add styles to make the text standout and align to the right */
-.header {
-    text-align: right;
-    margin-top: 300px;
-    margin-right: 200px;
-}
-
-.header h1 {
-    font-size: 50px;
-    color: #dad6e2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family:  sans-serif; 
-}
-
-.header p {
-    font-size: 30px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: sans-serif; 
-}
-
-/* Add styles for the social media icons */
-.social-icons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #0074e4; /* Change color on hover */
-}
-
- /* Add styles to make the text standout and align to the right */
- .header {
     text-align: right;
     margin-top: 300px;
     margin-right: 200px;
@@ -173,118 +208,15 @@ body#index {
     margin-left: 400px;
 
 }
-
-.header-index p {
-    font-size: 30px;
-    color: #fffefe;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Style for your name */
-.profile-name {
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 20px;
-    font-family: 'Pacifico';
-}
-
-/* Add styles to make the text standout and align to the right */
-.header {
-    text-align: right;
-    margin-top: 150px;
-    margin-right: 200px;
-    
-}
-body {
-    background-color: #ffffff; /* Replace with your desired background color */
-}
-}
-
-/*-----------------------------*/
-body#about main {
-    margin-left: 250px; /* Adjusted margin to match the sidebar width */
-    padding: 20px;
-    margin-top: 0;
-}
-
-/* Add styles for the sidebar logo */
-.sidebar-logo {
-    position: absolute;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
-    left: 65px; /* Adjust the distance from the left as needed */
-    width: 100px; /* Set the width of your logo */
-    height: auto; /* Maintain aspect ratio */
-
-}
-.professional-summary {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    margin-left: 20px; /* Add margin to avoid overlapping */
-}
-
-/* Additional styles for Details section */
-.details {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-left: 20px; /* Add margin to avoid overlapping */
-}
-
-.detail-item {
-    margin-bottom: 10px;
-}
-
-.detail-item i {
-    margin-right: 10px;
-    color: #0074e4; /* Icon color */
-}
-
-.detail-item span {
-    font-size: 18px;
-}
-
-.details ol {
-    margin-left: 20px;
-}
-
-/* this for the dagko nga text*/
-/* Style for the "About Me" heading */
-.about-me-heading {
-    font-size: 36px;
-    color: #0074e4; /* Change color to your preference */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    margin-bottom: 10px; /* Adjust spacing */
-}
-
-/* Style for the "Information Systems Student" subheading */
-.student-info {
-    font-size: 24px;
-    color: #666; /* Change color to your preference */
-    margin-bottom: 20px; /* Adjust spacing */
-}
-
-/* Additional styles for the Resume page */
+/* Resume Page Styles */
+/* Main Content Styles for Resume Page */
 body#resume main {
-    margin-left: 280px; /* Adjusted margin to account for the sidebar width */
+    margin-left: 280px; 
     padding: 20px;
     margin-top: 0;
 }
 
-/* Styles for section titles */
-.section-title {
-    font-size: 24px;
-    color: #0074e4;
-    margin-top: 20px;
-}
-
-/* Styles for skills section */
+/* Skills Section Styles */
 .skills .skill-list {
     list-style-type: none;
     padding: 0;
@@ -296,7 +228,8 @@ body#resume main {
     justify-content: space-between;
     margin-bottom: 10px;
 }
-/* Style for the skill bars */
+
+/* Skill Bar Styles */
 .skill-bar {
     width: 100%;
     background-color: #f2f2f2;
@@ -306,12 +239,16 @@ body#resume main {
 
 .skill-rating {
     height: 100%;
-    background-color: #0074e4; /* Change the color to your preference */
+    background-color: #0074e4; 
     border-radius: 5px;
 }
+.section-title {
+    font-size: 24px;
+    color: #0074e4;
+    margin-top: 20px;
+}
 
-
-/* Styles for contact section */
+/* Contact Section Styles */
 .contact p {
     margin: 5px 0;
 }
@@ -325,17 +262,17 @@ body#resume main {
     text-decoration: underline;
 }
 
-/* Styles for education section */
+/* Education Section Styles */
 .education p {
     margin: 5px 0;
 }
 
-/* Styles for work experience section */
+/* Work Experience Section Styles */
 .work-experience p {
     margin: 5px 0;
 }
 
-/* Styles for projects section */
+/* Projects Section Styles */
 .projects p {
     margin: 5px 0;
 }
